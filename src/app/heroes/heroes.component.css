@@ -42,3 +42,33 @@
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
 }
+
+    
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  /* height: 200px; /* Should be removed. Only for demonstration */
+}
+
+.left, .right {
+  width: 20%;
+}
+
+.center {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/**  Useful for sticking in the background to figure out what is going one in a div.
+.backgrounded {
+  background-image: url("https://placehold.it/200x150/ccc/666&text=M-L");
+}
+*/
+

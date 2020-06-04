@@ -1,11 +1,24 @@
 <h2>My Heroes</h2>
 
-<ul class="heroes">
-  <li *ngFor="let hero of heroes"
-    [class.selected]="hero === selectedHero"
-    (click)="onSelect(hero)">
-    <span class="badge">{{hero.id}}</span> {{hero.name}}
-  </li>
-</ul>
-
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+<div class="row">
+  <div class="tim middle left column backgrounded">
+    <h2>Column 1</h2>
+    <p>Text in the middle left column w/ background</p>
+    <ul class="heroes">
+      <li *ngFor="let hero of heroes"
+        [class.selected]="hero === selectedHero"
+        (click)="onSelect(hero)">
+        <span class="badge">{{hero.id}}</span> {{hero.name}}
+      </li>
+    </ul>
+  </div>
+  <div class="center middle column backgrounded">
+    <h2>Column 2</h2>
+    <p >Text in the middle central column w/ background</p>
+    <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+  </div>
+  <div class="right middle column backgrounded">
+    <h2>Column 3</h2>
+    <p>Text in the middle central column w/ background</p>
+  </div>
+</div>

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from "./messages/messages.component";
+import { layout } from "angular-ui-layout";
 
 @NgModule({
   declarations: [
@@ -21,4 +22,4 @@ import { MessagesComponent } from "./messages/messages.component";
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
